@@ -1,6 +1,5 @@
 ﻿using Business.Extensions;
 using Controllers;
-using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
 using Persistence.Extensions;
 using Persistence.Options;
@@ -59,9 +58,8 @@ namespace TestAPI
             if (env.IsDevelopment())
             {
                 app.UseSwagger()
-                   .UseSwaggerUI(ConfigureSwaggerUi);
-
-                app.UseDeveloperExceptionPage();
+                   .UseSwaggerUI(ConfigureSwaggerUi)
+                   .UseDeveloperExceptionPage();
             }
             else
             {

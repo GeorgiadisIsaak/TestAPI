@@ -1,6 +1,5 @@
 ﻿using Business.Interfaces;
 using Microsoft.Extensions.Logging;
-using System.Runtime.CompilerServices;
 using Types.Requests;
 using Types.Responses;
 
