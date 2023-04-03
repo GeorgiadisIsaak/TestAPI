@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Implementation\Business\Business.csproj" />
+    <ProjectReference Include="..\Implementation\Controllers\Controllers.csproj" />
+    <ProjectReference Include="..\Implementation\Persistence\Persistence.csproj" />
+    <ProjectReference Include="..\Implementation\Types\Types.csproj" />
+  </ItemGroup>
+
+</Project>
